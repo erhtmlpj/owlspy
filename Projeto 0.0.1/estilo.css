@@ -1,0 +1,76 @@
+body
+{
+    background-color: black;
+    color: white;
+	height: 100%;
+}
+.geral
+{
+	min-height: 100%;
+	position:relative;
+    width:100%;
+}
+footer
+{
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #4682B4;
+}
+#navegacao
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	border-left: solid 1px;
+	border-left-color: #4682B4;
+	
+}
+#botoes
+{
+	border: solid 12px #4682B4;
+	background-color: #4682B4;
+	border-radius: 20px;
+	color: white;
+}
+#tabform
+{
+	padding-bottom: 15px;
+    
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
+#tabDownload
+{
+	text-align: center;
+	border: solid 1px #4682B4;
+}
+#tdDown
+{
+	border: solid 1px #4682B4;
+}
+#tabelaForm
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+}
+.botao01
+{
+    border: hidden 3px #000000;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    position: relative;
+    background: #4682B4;
+    color: white;
+    border-radius: 3px;
+}
+.botao01:hover
+{
+    background: linear-gradient(#4682B4, #00FFFF);
+}
