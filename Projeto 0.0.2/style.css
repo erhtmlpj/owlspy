@@ -1,0 +1,153 @@
+body
+{
+    font-family: verdana;
+    background-color: black;
+    color: white;
+}
+
+header
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+nav
+{
+    background-color: coral;
+    height 35;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 10px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li
+{
+    display: inline;
+    padding: 10px;
+    
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;   
+    padding: 10px 5px 10px 5px;
+}
+
+nav li:hover
+{
+    background-color: black;
+    padding: 10;
+}
+nav a:hover
+{
+    color: coral;
+}
+article
+{
+    background-color: #222222;
+    padding: 5px;
+}
+
+footer
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    /*
+    bottom: 0px;
+    display: inline-block;
+    position: absolute;
+    width: 960px;
+    */
+}
+
+img, video
+{
+    max-width: 100%;
+}
+
+@media all and (min-width:960px) 
+{
+    body
+    {
+        width: 960px;
+        margin: auto;
+    }    
+}
+
+
+@media all and (max-width:480px)
+{
+    nav
+    {
+        height: 100%;
+    }
+    nav li
+    {
+        display: block;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
+article .btnLink
+{
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    padding: 6px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    float:right;
+}
+article .conteudo
+{
+    float:left;
+}
+article #btnBotao
+{
+    background-color: cornflowerblue;
+    border: none 3px #000000;
+    padding: 6px;
+    margin: 0;
+    font-weight: bold;
+}
+
+article .btnMais
+{
+    border: solid 2px coral;
+    padding: 3px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    color: cornflowerblue;
+}
+
+article input
+{
+    background-color: coral;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+article .login
+{
+    margin: auto;
+    width: 250px;
+}
