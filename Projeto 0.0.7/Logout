@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Registro - Monitoramento</title>
+    <meta name="description" content="Site que forneçe ferramenta de monitoramento de máquinas para sua(s) empresa(s) ou sala(s) de aula">
+    <link rel="icon" href="eagle.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="mainScript.js"></script>
+</head>
+    
+<body>
+    <header>
+        <h1>Monitoramento</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="registro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="ferramenta.html">Sobre a Ferramenta</a></li>
+            <li><a href="">Sobre nós</a></li>
+        </ul>
+    </nav>
+    
+    <article>
+        <h2>Administração</h2>
+        <section>
+            <div>
+        <form>IP <input name="host" type="text"> <button name="connectar" >Conectar</button>
+        </form>
+            </div>
+            <div class="tela">
+                <form>
+                    <button name="nJanela">Janela Separada</button><br></form>
+            </div>
+            <div>
+            <form>
+                    <p>Teclas digitadas</p>
+                    <textarea name="teclas" rows="10" cols="80"></textarea>
+                    <br>
+                <button name="salvar">Salvar teclas</button>
+                    <button type="reset" name="limpar">Limpar</button>
+                </form>
+            </div>
+        </section>
+    </article>
+    
+    <footer>
+        Criado por Rodrigo Mesquita &copy;
+    </footer>
+</body>
+</html>

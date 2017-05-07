@@ -1,0 +1,306 @@
+/*Aqui é especificado a fonte de todo o site, a cor de fundo e a cor de grande parte das letras.*/
+body  
+{
+    font-family: verdana;
+    background-color: black;
+    color: white;
+}
+
+/*Aqui fica a cor de fundo do cabeçalho, o espaçamento interno de seus elementos, a cor de suas letras, e a altura do mesmo.*/
+header 
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black; 
+    height: 90px;
+}
+
+/*Aqui fica a largura do título de nível h1 localizado no cabecalho cujo valor é auto, ou seja, a largura se adequará ao espaço preenchido pelas letras, e
+o valor float, que especifica que o cabeçalho deve ficar à esquerda.*/
+header h1 
+{
+    width: auto;
+    float: left;
+}
+/*Aqui é especificada a largura máxima da imagem no cabeçalho, que não deve ultrapassar o valor que ela mesma preenche, e a largura da imagem em si que 
+preenche o espaço de 100px, a sua altura é de 90px, e o elemento float indica que ela deve ficar á direita.*/
+header img
+{
+    max-width: 100%;
+    width: 100px;
+    height: 90px;
+    float: right;
+}
+/*Aqui são específicados os valores da barra de navegação principal, o seu fundo é da cor vermelho coral, tem a altura de 35px, o elemento "font-weight"
+ao qual é atribuido o valor bold, indica que as palavras devem ficar em negrito, o elemento "font-size" especifíca que o tamanho das letras devem ser de 
+16px o "border-radius" está controlando o arredondado das bordas.*/
+nav
+{
+    background-color: coral;
+    height 35px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+/*Aqui são especificados os valores da lista de links do menu de navegação, o elemento "list-style-type" especifica o estilo da lista, o atributo atribuido
+à ele(none) indica que a lista não possui um estilo, isso retira as bolinhas da margem dos elementos da lista, o elemento "height" com o valor "auto" indica
+que a altura da lista é proporcional a ela mesma, o "padding" indica o espaçamento interno dos elementos da lista, o "text-align" alinha as letras e palavras
+ao centro.*/
+nav ul
+{
+    list-style-type: none;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+/*Aqui são especificadas as propriedades de cada elemento da lista de links do menu de navegação principal, o elemento "display" ao qual está atribuido o 
+valor "inline" faz com que os elementos da lista se disponham de forma alinhada, o "padding" configura o espaçamento interno dos elementos da lista.*/
+nav li 
+{
+    display: inline;
+    padding: 10px;
+    
+}
+/*Aqui é especificado o estilo dos links do menu de navegação principal, "text-decoration" com o atributo "none" retira o sublinhado natural dos elementos
+anchor, o color especifica a cor das letras, e o padding com esses 4 parametros especifica o espaçamento interno do bottom left top e right (não necessáriamente
+nessa ordem).*/
+nav a
+{
+    text-decoration: none;
+    color: black;   
+    padding: 10px 5px 10px 5px;
+}
+/*Faz com que a cor de fundo dos elementos da lista fiquem da cor escura e muda o espaçamento interno deles para 10px quando o mouse é colocado sobre esses 
+elementos.*/
+nav li:hover
+{
+    background-color: black;
+    padding: 10;
+}
+/*Faz com que a cor das letras dos links se torne vermelho coral quando o mouse é colocado sobre os links.*/
+nav a:hover
+{
+    color: coral;
+}
+/*Deixa a cor do artigo onde é colocado o conteudo principal do site em um tom de preto mais claro, muda o espaçamento interno de seus elementos para 5px
+e impõe a altura minima como 480px.*/
+article
+{
+    background-color: #222222;
+    padding: 5px;
+    min-height: 480px;
+}
+/*Muda a cor de fundo do rodapé para "cornflowerblue" e altera o espaçamento interno para 10 px, muda a cor das letras para preto, alinha o texto principal no 
+meio e coloca a fonte em negrito.*/
+footer
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+/*Faz com que videos e imagens fiquem sempre em seu tamanho total, porém, diminuam, caso a resolução do site diminua também.*/
+img, video
+{
+    max-width: 100%;
+}
+/*Faz com que, a partir do momento em que a largura do site se torna maior do que 960px a largura total do elemento "body" seja sempre de 960px, e faz com que
+a margem sempre se adeque de forma que o conteudo fique centralizado.*/
+@media all and (min-width:960px) 
+{
+    body
+    {
+        width: 960px;
+        margin: auto;
+    }    
+}
+/*Faz com que, a partir do momento em que a largura do site se torne menor que 480px, o cabeçalho passe a ter 180px de altura, o menu de navegação passe a ter 
+100% de altura, ou seja se adeque ao tamanho de seus elementos, o elemento "li" da lista do meno de navegação se torne um bloco, tenha espaçamento interno de 
+10px e não possua margem, faz com que o elemento "aside" possua um tamanho equivalente ao necessário para comportar seus elementos, o elemento "li" do aside
+se torne um bloco, possua espaçamento interno de 10px e não possua margem, e faz com que os links do elemento aside possuam um espaçamento interno de 10px e se 
+tornem um bloco.*/
+@media all and (max-width:480px)
+{
+    header
+    {
+        height: 180px;
+    }
+    nav
+    {
+        height: 100%;
+    }
+    nav li
+    {
+        display: block;
+        padding: 10px;
+        margin: 0px;
+    }
+    aside
+    {
+        height: 100%;
+    }
+    aside li
+    {
+        display:block;
+        padding: 10px;
+        margin: 0px;
+    }
+    aside a
+    {
+        padding: 10px;
+        display: block;
+    }
+}
+/*Faz com que todos os elementos da classe "btnLink" possuam uma borda da cor "corn flower blue" e uma cor de fundo igual a da borda, faz com que possuam um
+espaçamento interno de 6px, faz com que os elementos fiquem alinhados, e alinha o texto ao centro, faz com que a raio da borda seja de 10px, e por último alinha
+o elemento à direita.*/
+article .btnLink
+{
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    padding: 6px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    float:right;
+}
+/**/
+article .conteudo
+{
+    float:left;
+}
+article button, .btnBotao
+{
+    background-color: cornflowerblue;
+    border: none 3px #000000;
+    padding: 6px;
+    margin: 0;
+    font-weight: bold;
+}
+
+article .btnMais
+{
+    border: solid 2px coral;
+    padding: 3px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    color: cornflowerblue;
+}
+
+article input
+{
+    background-color: coral;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 4px;
+}
+article .register
+{
+    margin: auto;
+    width: 310px;
+}
+article .login
+{
+    margin: auto;
+    width: 250px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+article .btnMorenc
+{
+    border: solid 2px coral;
+    padding: 3px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-radius: 6px;
+}
+
+article a
+{
+    color:cornflowerblue;
+}
+
+article .btnLink a
+{
+    color: white;
+}
+#lLink
+{
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+article .descricao
+{
+    max-width: 500px;
+    float: left;
+    display: inline-block;
+}
+article .download
+{
+    min-height: 200px;
+}
+article .tblDownloads
+{
+    display: inline-block;
+    border: solid 1px cornflowerblue;
+    color: coral;
+}
+
+article .tblDownloads td,th
+{
+    border: solid 1px cornflowerblue;
+    padding: 5px;
+    
+}
+
+aside 
+{
+    display: inline-block;
+    background-color: coral;
+    border-radius: 10px;
+}
+aside ul
+{
+    list-style-type: none;
+    text-align: center;
+    margin: 3px;
+    padding: 0px;
+}
+aside li
+{
+    display: inline;
+    padding: 5px;
+}
+aside a
+{
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+aside a:hover
+{
+    background-color: black;
+    color: coral;
+}
+.configMenu
+{
+    max-width: 400px;
+    float: left;
+}
+#configCont
+{
+    max-width: 4400px;
+    float: right;
+}

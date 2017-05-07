@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Monitoramento</title>
+    <meta name="description" content="Site que forneçe ferramenta de monitoramento de máquinas para sua(s) empresa(s) ou sala(s) de aula">
+    <link rel="icon" href="Imagem1.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="mainScript.js"></script>
+</head>
+    
+<body>
+    <header>
+        <h1>Monitoramento</h1>
+        <img src="Imagem1.png"> 
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="registro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="ferramenta.html">Sobre a Ferramenta</a></li>
+            <li><a href="">Sobre nós</a></li>
+        </ul>
+    </nav>
+    
+    <article>
+        <h2>Seja bem vindo</h2>
+            <p>
+                Começe a utilizar agora está ferramenta de monitoramento, que permite ter 
+            acesso aquilo que seus funcionários, seus alunos ou até mesmo seus filhos
+            estão fazendo diante do computador, tem acesso á tela do computador em tempo 
+            real, assim como as teclas digitadas.
+            </p>
+        <section class="download">
+            <h3>Instale Agora</h3>
+            
+            <div class="conteudo">
+            <p>
+                Apenas instale o prograna na máquina que deseja monitorar, e após entrar
+            na sua conta de usuário, você já será capaz de monitorar os computadores
+            selecionados, desde que você saiba o ip deles, e que eles estejam na sua rede,
+            é claro.
+            </p>
+            <p>
+                Clique no botão ao lado para baixar a versão mais recente para windows, ou
+            clique abaixo para visualizar as diferentes versões na página de downloads.
+            </p>
+            </div>
+            
+            <div class="btnLink">
+                <a>Download</a>
+            </div>
+            <div class="btnMais">
+                <a href="download.html">Ver diferentes versões →</a>
+            </div>
+        </section>
+        
+        <section class="cadastro">
+            <div class="conteudo">
+            <h3>Cadastre-se</h3>
+            <p>
+                Para ter acesso às máquinas com o programa, você precisa ter uma conta e
+            estar logado no site, o cadastro é simples e grátis, você pode acessar a página
+            de cadastro no botão ao lado.
+            </p>
+            </div>
+            <div class="btnLink">
+                <a>Cadastro</a>
+            </div>
+        </section>
+        <section>
+            <div class="conteudo">
+            <h3>Login</h3>
+            <p>
+                Caso você já possua uma conta, basta apenas inserir seus dados abaixo e clicar no botão entrar.
+            </p>
+            </div>
+            <div>
+                <form method="post" name="frLogin" action="#" onsubmit="return validacaofrLogin()">
+                    <table>
+                        <tr><td>Login</td><td><input type="text" name="login"></td><tr>
+                        <tr><td>Senha</td><td><input type="text" name="senha"></td><tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button id="btnBotao" type="submit" name="entrar">Entrar</button>
+                                <button id="btnBotao" type="reset"  name="limpar">Limpar</button>
+                            </td>
+                        <tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </article>
+    
+    <footer>
+        Criado por Rodrigo Mesquita &copy;
+    </footer>
+</body>
+</html>
