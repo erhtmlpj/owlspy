@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Aqui são colocados os elementos do head tal como os icones e a descrição do site, também são colocados os links para as folhas de estilo externas e os
+scripts em javascript-->
+    <meta charset="utf-8">
+    <title>LogIn - Monitoramento</title>
+    <meta name="description" content="Site que forneçe ferramenta de monitoramento de máquinas para sua(s) empresa(s) ou sala(s) de aula"> <!-- O elemento description dá uma
+Descrição da Página, isso é util quando navegadors procuram pelo seu site-->
+    <link rel="icon" href="Imagem1.png"> <!-- icon indica que o elemento head possui como icone como imagem1.-->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!--indica a página de estilos style.css como página a ser usada nesse site. -->
+    <script type="text/javascript" src="mainScript.js"></script>
+</head>
+    
+<body>
+    <header>
+        <h1>Owlspy</h1>
+        <img src="Imagem1.png"> 
+    </header>
+    
+    <nav> <!-- Barra de navegação principal-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="registro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="ferramenta.html">Sobre a Ferramenta</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+    </nav>
+    
+    <article> <!--Artigo com os elementos relacionados ao login do usuário.-->
+        <h2>Login</h2>
+        <section >
+            <div class="login">
+                <form method="post" name="frLogin" action="#" onsubmit="return validacaofrLogin()"> <!--Form que aciona a função de validação de login do usuário.-->
+                    <table>
+                        <tr><td>Login</td><td><input type="text" name="login"></td><tr>
+                        <tr><td>Senha</td><td><input type="text" name="senha"></td><tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button  type="submit" name="entrar">Entrar</button>
+                                <button  type="reset"  name="limpar">Limpar</button>
+                            </td>
+                        <tr>
+                    </table>
+                </form>
+            </div>
+            <div align="center">
+                <a href="#" id="lLink" onclick="fPass()">Esqueci minha senha</a> <!--Caso usuário esqueça a própria senha, ele pode clicar nesse botão que abre uma janela
+onde ele poderá inserir os dados para recuperar a senha.-->
+            </div>
+        </section>
+        <section>
+            
+        <div align="center">
+        <p>Não possui uma conta?</p>
+        </div>
+            
+        <div class="btnMorenc">
+        <a href="registro.html">Cadastre-se →</a><!--Caso o usuário não possua uma conta ele poderá entrar no link desse botão e será levado para a janela de cadastro.-->
+        </div>
+            
+        </section>
+    </article>
+    
+    <footer> <!--Rodapé-->
+        Rodrigo Mesquita &amp; Emidio Alves&copy;
+    </footer>
+</body>
+</html>
