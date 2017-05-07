@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Aqui são colocados os elementos do head tal como os icones e a descrição do site, também são colocados os links para as folhas de estilo externas e os
+scripts em javascript-->
+    <meta charset="utf-8">
+    <title>Administração - Monitoramento</title>
+    <meta name="description" content="Site que forneçe ferramenta de monitoramento de máquinas para sua(s) empresa(s) ou sala(s) de aula"> <!-- O elemento description dá uma
+Descrição da Página, isso é util quando navegadors procuram pelo seu site-->
+    <link rel="icon" href="Imagem1.png"> <!-- icon indica que o elemento head possui como icone como imagem1.-->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!--indica a página de estilos style.css como página a ser usada nesse site. -->
+    <script type="text/javascript" src="mainScript.js"></script>
+</head>
+    
+<body>
+    <header>
+        <h1>Owlspy</h1>
+        <img src="Imagem1.png"> 
+    </header>
+    
+    <nav> <!-- Barra de navegação principal-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="registro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="ferramenta.html">Sobre a Ferramenta</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+    </nav>
+  
+    <article> <!--Este artigo possui elementos que auxiliarão o usuário à monitorar as máquinas com o software.-->
+        <h2>Administração</h2>
+        <section>
+            <div>
+        <form>IP <input name="host" type="text"> <button name="connectar" >Conectar</button><!--Es6te botão serve para se conectar ao computador que será monitorado-->
+        </form>
+            </div>
+            <div class="tela"><!--Por enquanto esse div apenas guarda o botão de apresentar a tela, mas quando o programa for implementado esse div, comportará a tela em si
+e o botão ficará em um div separado.-->
+                <form>
+                    <button name="nJanela">Janela Separada</button><br></form><!--Esse botão acionará uma função em javascript que irá chamar uma janela com stream do 
+desktop do computador à ser monitorado-->
+            </div>
+            <div>
+            <form>
+                    <p>Teclas digitadas</p><!--Esta área vai mostrar em tempo real as teclas sendo digitadas pelo usuário.-->
+                    <textarea name="teclas" rows="10" cols="80"></textarea>
+                    <br>
+                <button name="salvar">Salvar teclas</button><!--Este botão vai permitir realizar um download do Log acima.-->
+                    <button type="reset" name="limpar">Limpar</button>
+                </form>
+            </div>
+        </section>
+    </article><!--Este article não está 100% completo, por que o software de monitoramento ainda não está pronto, e não há banco de dados para guardar registro 
+das máquinas.-->
+    
+    <footer> <!--Rodapé-->
+        Rodrigo Mesquita &amp; Emidio Alves&copy;
+    </footer>
+</body>
+</html>
