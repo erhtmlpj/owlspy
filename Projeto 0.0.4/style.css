@@ -1,0 +1,252 @@
+body
+{
+    font-family: verdana;
+    background-color: black;
+    color: white;
+}
+
+header
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+nav
+{
+    background-color: coral;
+    height 35;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 10px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li
+{
+    display: inline;
+    padding: 10px;
+    
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;   
+    padding: 10px 5px 10px 5px;
+}
+
+nav li:hover
+{
+    background-color: black;
+    padding: 10;
+}
+nav a:hover
+{
+    color: coral;
+}
+article
+{
+    background-color: #222222;
+    padding: 5px;
+}
+
+footer
+{
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+img, video
+{
+    max-width: 100%;
+}
+
+@media all and (min-width:960px) 
+{
+    body
+    {
+        width: 960px;
+        margin: auto;
+    }    
+}
+
+
+@media all and (max-width:480px)
+{
+    nav
+    {
+        height: 100%;
+    }
+    nav li
+    {
+        display: block;
+        padding: 10px;
+        margin: 0px;
+    }
+    aside
+    {
+        height: 100%;
+    }
+    aside li
+    {
+        display:block;
+        padding: 10px;
+        margin: 0px;
+    }
+    aside a
+    {
+        padding: 10px;
+        display: block;
+    }
+}
+
+article .btnLink
+{
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    padding: 6px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    float:right;
+}
+article .conteudo
+{
+    float:left;
+}
+article button
+{
+    background-color: cornflowerblue;
+    border: none 3px #000000;
+    padding: 6px;
+    margin: 0;
+    font-weight: bold;
+}
+
+article .btnMais
+{
+    border: solid 2px coral;
+    padding: 3px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    color: cornflowerblue;
+}
+
+article input
+{
+    background-color: coral;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 4px;
+}
+article .register
+{
+    margin: auto;
+    width: 310px;
+}
+article .login
+{
+    margin: auto;
+    width: 250px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+article .btnMorenc
+{
+    border: solid 2px coral;
+    padding: 3px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-radius: 6px;
+}
+
+article a
+{
+    color:cornflowerblue;
+}
+
+article .btnLink a
+{
+    color: white;
+}
+#lLink
+{
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+article .descricao
+{
+    max-width: 500px;
+    float: left;
+    display: inline-block;
+}
+article .download
+{
+    min-height: 200px;
+}
+article .tblDownloads
+{
+    display: inline-block;
+    border: solid 1px cornflowerblue;
+    color: coral;
+}
+
+article .tblDownloads td,th
+{
+    border: solid 1px cornflowerblue;
+    padding: 5px;
+    
+}
+
+aside 
+{
+    display: inline-block;
+    background-color: coral;
+    border-radius: 10px;
+}
+aside ul
+{
+    list-style-type: none;
+    text-align: center;
+    margin: 3px;
+    padding: 0px;
+}
+aside li
+{
+    display: inline;
+    padding: 5px;
+}
+aside a
+{
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+aside a:hover
+{
+    background-color: black;
+    color: coral;
+}
